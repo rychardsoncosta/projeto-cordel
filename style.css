@@ -52,15 +52,25 @@ main p {
     text-align: left;
     padding-left: 40px;
     white-space: pre-line;
-    line-height: 3.0em;
+    line-height: 1.8em;
     font-family: var(--font-texto);
-    font-size: 4.0em;
+    font-size: 3.0em;
+    padding-bottom: 100px;
 
+}
+
+.formato {
+    background-color: #050503c7;
+    height: 800px;
+    width: 800px;
+    margin-left: 50px;
+    margin-top: 50px;
+    color: white;
 }
 
 #imagem1 {
     background-image: url('background001.jpg');
-    height: 500px;
+    height: 900px;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -69,11 +79,25 @@ main p {
 
 #imagem2 {
     background-image: url('background002.jpg');
-    height: 500px;
+    height: 900px;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    height: 30px;
+    text-align: center;
+    font-family: var(--font-normal);
+    padding-top: 10px;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
 }
 
 
