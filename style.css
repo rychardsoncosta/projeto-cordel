@@ -61,11 +61,15 @@ main p {
 
 .formato {
     background-color: #050503c7;
-    height: 800px;
-    width: 800px;
-    margin-left: 50px;
-    margin-top: 50px;
+    height: 700px;
+    width: 600px;
+    margin-left: 30px;
     color: white;
+}
+
+.formato > p {
+    padding: 0%;
+    margin-left: 10px;
 }
 
 #imagem1 {
@@ -93,11 +97,16 @@ footer{
     text-align: center;
     font-family: var(--font-normal);
     padding-top: 10px;
+    
 }
 
 footer a {
     text-decoration: none;
     color: white;
+}
+
+footer > p > a:hover {
+    text-decoration: underline;
 }
 
 
