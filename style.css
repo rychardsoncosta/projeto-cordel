@@ -1,16 +1,6 @@
 @charset "UTF-8";
 
-*{
-    margin: 0px;
-    padding: 0px
-}
 
-html,body {
-    background-color: dark;
-    min-height: 100vh;
-
-
-}
 
 @import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
 
@@ -18,10 +8,24 @@ html,body {
 
 :root{
 
-    --font-destaque: "Passion one", Sans-Serif;
-    --font-texto: "Sriracha", arial;
-    --font-normal: Verdana, Tahoma, sans-serif;
+    --font1: Verdana, Geneva, Tahoma, sans-serif;
+    --font2: "Passion one", Sans-Serif;
+    --font3: "Sriracha", arial;
 }
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-size: 1em;
+}
+
+html,body {
+    background-color: dark;
+    min-height: 100vh;
+    font-family: var(--font1);
+
+}
+
 
 header{ 
     background-color: black;
@@ -32,6 +36,8 @@ header{
 header > h1 {
     padding-top: 50px;
     font-variant: small-caps; /*Tudo maiusculo com as iniciais maiores*/
+    font-family: var(--font2);
+    font-size: 10vw;
 }
 
 header > p {
@@ -53,6 +59,12 @@ section {
     padding-bottom: 10vh;
     line-height: 2em;/*Espaçamento entre linhas*/
     padding-left: 30px;
+    font-family: var(--font3);
+    font-size: 3.5vw;
+}
+
+section p {
+    white-space: pre-line;
 }
 
 section.normal {
@@ -66,7 +78,8 @@ section.imagem {
 }
 
 section.imagem > p {
-    width: 400px;
+    display:inline-block; /*a caixa se adapata ao tamanho do texto*/
+    padding: 5px;
     background-color: rgba(0, 0, 0, 0.253);
 }
 
